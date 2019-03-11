@@ -1,14 +1,16 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        for (int x = 1; x <= 300; x++) {
+        System.out.println("Please input a number between 1 & 300");
+
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+
+        for (int x = 1; x <= input; x++) {
             ArrayList<String> string = new ArrayList<>();
 
             if (x % 3 == 0) {
